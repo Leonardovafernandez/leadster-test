@@ -3,8 +3,13 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
   min-height: 100vh;
+}
+
+.hero {
+  min-height: 300px;
+  width: 100%;
+  background-color: #e7f0fb;
 }
 
 .description {
