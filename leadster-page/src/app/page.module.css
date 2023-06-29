@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .hero {
@@ -68,6 +69,62 @@
   position: absolute;
   right: -20px;
 }
+
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7f0fb;
+  min-height: 350px;
+  width: 100vw;
+  gap: 40px;
+}
+
+.ctaImg {
+  height: 300px;
+  width: 323px;
+}
+
+.ctaContent {
+
+}
+
+.ctaContent h4 {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.ctaContent h3 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.ctaContent button {
+  height: 70px;
+  width: 260px;
+  border: none;
+  border-radius: 35px;
+  background-color: #1b86fc;
+  color: white;
+  font-size: 16px;
+}
+
+.boxTop {
+  border-top: 1px solid #2f3c4635;
+  padding-top: 16px;
+  margin-top: 16px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+-----------------------------------------------------------------
 
 .description {
   display: inherit;
