@@ -6,6 +6,7 @@ import ctaImg from "../assets/comparativo_img_CTA.png";
 import rating from "../assets/rating.webp";
 import noCard from "../assets/no-card-dark.webp";
 import selo from "../assets/selo_RD.png";
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -51,7 +52,7 @@ export default function Home() {
         </section>
       </main>
       <footer>
-
+        <Footer />
       </footer>
     </div>
   )
