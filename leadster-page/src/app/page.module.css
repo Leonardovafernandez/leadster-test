@@ -7,6 +7,7 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+/* -> SECTION HERO */
 .hero {
   display: flex;
   flex-direction: column;
@@ -69,7 +70,80 @@
   position: absolute;
   right: -20px;
 }
+/* -> SECTION LIBRARY */
 
+.library {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 90px 0;
+}
+
+.libraryHeader {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #2f3c4635;
+  padding-bottom: 25px;
+}
+
+.libraryHeaderButtons {
+  display: flex;
+  gap: 15px;
+}
+
+.libraryHeaderOrder {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+}
+
+.libraryHeaderOrder span {
+  color: #2f3c46;
+}
+
+.libraryHeaderOrder select {
+  background-color: #ffffff00;
+  padding: 10px 40px 10px 14px;
+  border: 1px solid #2f3c46;
+  border-radius: 8px;
+  font-size:16px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.libraryHeaderOrderImg {
+  height: 12px;
+  width: 17px;
+  position: absolute;
+  right: 14px;
+}
+
+.libraryContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 44px;
+  margin-top: 60px;
+}
+
+.libraryPages {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #2f3c4635;
+  padding-top: 25px;
+  font-size: 22px;
+  gap: 15px;
+}
+
+.libraryPages a {
+  text-decoration:none!important;
+  font-size: 22px;
+  padding: 0 8px;
+}
+
+/* -> SECTION CTA */
 .cta {
   display: flex;
   justify-content: center;
@@ -83,10 +157,6 @@
 .ctaImg {
   height: 300px;
   width: 323px;
-}
-
-.ctaContent {
-
 }
 
 .ctaContent h4 {

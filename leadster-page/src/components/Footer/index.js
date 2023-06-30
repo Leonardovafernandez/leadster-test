@@ -1,6 +1,9 @@
 import "./styles.css";
 import Image from "next/image";
 import logo from "./../../assets/logo.png";
+import linkedin from "./../../assets/linkedin.png";
+import instagram from "./../../assets/instagram.svg";
+import facebook from "./../../assets/facebook.svg";
 import Link from "next/link";
 
 export default function Footer() {
@@ -36,13 +39,13 @@ export default function Footer() {
                     <span><strong>Siga a Leadster</strong></span>
                     <div className="footer-social-links">
                         <div className="footer-social">
-
+                            <Image className="footer-social-img" src={linkedin} alt="Logomarca da empresa" />
                         </div>
                         <div className="footer-social">
-                            
+                            <Image className="footer-social-img" src={facebook} alt="Logomarca da empresa" />
                         </div>
                         <div className="footer-social">
-                            
+                            <Image className="footer-social-img" src={instagram} alt="Logomarca da empresa" />
                         </div>
                     </div>
                     <span>E-mail: contato@leadster.com.br</span>

@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import Header from './../components/Header'
 import styles from "./page.module.css";
@@ -6,9 +8,19 @@ import ctaImg from "../assets/comparativo_img_CTA.png";
 import rating from "../assets/rating.webp";
 import noCard from "../assets/no-card-dark.webp";
 import selo from "../assets/selo_RD.png";
+import down from "../assets/down.png";
 import Footer from '@/components/Footer';
+import Button from '@/components/Button';
+import { useState } from 'react';
+import Card from '@/components/Card';
 
 export default function Home() {
+  const [agencias, setAgencias] = useState(false);
+  const [chatbot, setChatbot] = useState(false);
+  const [md, setMd] = useState(false);
+  const [gl, setGl] = useState(false);
+  const [mp, setMp] = useState(false);
+
   return (
     <div>
       <Header />
@@ -25,9 +37,44 @@ export default function Home() {
           <p>Conheça as estratégias que <strong>mudaram o jogo</strong> e como aplicá-las no seu negócio</p>
         </section>
 
-        <section className='library'>
-          <p>LIBRARY</p>
+        <section className={styles.library}>
+          <div className={styles.libraryHeader}>
+            <div className={styles.libraryHeaderButtons}>
+              <Button active={agencias} setActive={setAgencias}>Agências</Button>
+              <Button active={chatbot} setActive={setChatbot}>Chatbot</Button>
+              <Button active={md} setActive={setMd}>Marketing Digital</Button>
+              <Button active={gl} setActive={setGl}>Geração de Leads</Button>
+              <Button active={mp} setActive={setMp}>Mídia Paga</Button>
+            </div>
+            <div className={styles.libraryHeaderOrder}>
+              <span><strong>Ordenar por</strong></span>
+              <select>
+              <option value='data' selected>Data de Publicação</option>
+              <option value='data'>Crescente A - Z</option>
+              <option value='data'>Decrescente Z - A</option>
+              </select>
+              <Image className={styles.libraryHeaderOrderImg} src={down} ></Image>
+            </div>
+          </div>
+          <div  className={styles.libraryContent}>
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+          </div>
+          <div className={styles.libraryPages}>
+            <span><strong>Página</strong></span>
+            {Array(4).fill().map((_, i) => (
+              <a key={`page-${i}`} href="#">{i+1}</a>
+              ))}
+          </div>
         </section>
+
         <section >
           <div className={styles.cta}>
             <Image className={styles.ctaImg} src={ctaImg} />
