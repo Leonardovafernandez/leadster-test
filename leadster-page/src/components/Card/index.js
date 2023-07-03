@@ -7,7 +7,7 @@ export default function Card() {
         <div className="card">
             <Image className="card-img" src={capa} />
             <div className="card-tittle">
-                <span><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, quibusdam?</strong></span>
+                <span><strong>Como aumentar sua Geração de Leads feat. Traktor</strong></span>
             </div>
         </div>
     )

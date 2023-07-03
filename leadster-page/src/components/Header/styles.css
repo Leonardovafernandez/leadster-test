@@ -2,10 +2,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75px;
+    height: 130px;
 }
 
-.logo-img {
-    height: 30px;
-    width: 146px;
-}
