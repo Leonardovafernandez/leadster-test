@@ -9,12 +9,12 @@ export default function ModalLibrary({show, setShow}) {
     return (
     <div className="modal">
         <div className="modal_video">
-            <Image className="close" src={CloseIcon} onClick={()=>setShow(!show)}/>
+            <Image className="close" src={CloseIcon}  alt='' onClick={()=>setShow(!show)}/>
             <span className="title"><strong><span className="blue">Webinar: </span>Como aumentar sua Geração de Leads feat. Traktor</strong></span>
             <div className="video">
                 <iframe
                     src="https://www.youtube.com/embed/8EKTUhF7yA8"
-                    title='Tendências de Marketing para 2023!'
+                    title="Como aumentar sua Geração de Leads"
                     allowFullScreen
                     width="100%" height="350"
                 />
@@ -31,7 +31,7 @@ export default function ModalLibrary({show, setShow}) {
                     <button className="buttons-modal">
                         <div className="xls">
                             <div className="xls-img">
-                                <Image src={DownloadGreen} />
+                                <Image src={DownloadGreen}  alt=''/>
                             </div>
                             <div  className="xls-txt">
                                 <span>Spreadsheet.xls</span>
@@ -41,7 +41,7 @@ export default function ModalLibrary({show, setShow}) {
                     <button className="buttons-modal">
                         <div className="doc">
                             <div className="doc-img">
-                                <Image src={DownloadBlue} />
+                                <Image src={DownloadBlue}  alt=''/>
                             </div>
                             <div className="doc-txt">
                                 <span>Document.doc</span>
@@ -51,7 +51,7 @@ export default function ModalLibrary({show, setShow}) {
                     <button className="buttons-modal">
                         <div className="ppt">
                             <div className="ppt-img">
-                                <Image src={DownloadYellow} />
+                                <Image src={DownloadYellow}  alt=''/>
                             </div>
                             <div className="ppt-txt">
                                 <span>Presentation.ppt</span>
