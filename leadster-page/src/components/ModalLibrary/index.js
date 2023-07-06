@@ -9,7 +9,7 @@ export default function ModalLibrary({show, setShow}) {
     return (
     <div className="modal">
         <div className="modal_video">
-            <Image className="close" src={CloseIcon}  alt='' onClick={()=>setShow(!show)}/>
+            <Image className="close" src={CloseIcon}  alt="" onClick={()=>setShow(!show)}/>
             <span className="title"><strong><span className="blue">Webinar: </span>Como aumentar sua Geração de Leads feat. Traktor</strong></span>
             <div className="video">
                 <iframe
@@ -31,7 +31,7 @@ export default function ModalLibrary({show, setShow}) {
                     <button className="buttons-modal">
                         <div className="xls">
                             <div className="xls-img">
-                                <Image src={DownloadGreen}  alt=''/>
+                                <Image src={DownloadGreen}  alt=""/>
                             </div>
                             <div  className="xls-txt">
                                 <span>Spreadsheet.xls</span>
@@ -41,7 +41,7 @@ export default function ModalLibrary({show, setShow}) {
                     <button className="buttons-modal">
                         <div className="doc">
                             <div className="doc-img">
-                                <Image src={DownloadBlue}  alt=''/>
+                                <Image src={DownloadBlue}  alt=""/>
                             </div>
                             <div className="doc-txt">
                                 <span>Document.doc</span>
@@ -51,7 +51,7 @@ export default function ModalLibrary({show, setShow}) {
                     <button className="buttons-modal">
                         <div className="ppt">
                             <div className="ppt-img">
-                                <Image src={DownloadYellow}  alt=''/>
+                                <Image src={DownloadYellow}  alt=""/>
                             </div>
                             <div className="ppt-txt">
                                 <span>Presentation.ppt</span>

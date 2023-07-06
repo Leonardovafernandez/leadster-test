@@ -34,7 +34,7 @@ export default function Home() {
             <h2>Menos Conversinha,</h2>
             <div className={styles.tittle}>
               <h1>Mais Conversão</h1>
-              <Image className={styles.shineTittle} src={effect} alt=''/>
+              <Image className={styles.shineTittle} src={effect} alt=""/>
             </div>
           </div>
           <p>Conheça as estratégias que <strong>mudaram o jogo</strong> e como aplicá-las no seu negócio</p>
@@ -56,7 +56,7 @@ export default function Home() {
               <option value='data'>Crescente A - Z</option>
               <option value='data'>Decrescente Z - A</option>
               </select>
-              <Image className={styles.libraryHeaderOrderImg} src={down}  alt=''></Image>
+              <Image className={styles.libraryHeaderOrderImg} src={down}  alt=""></Image>
             </div>
           </div>
           <div  className={styles.libraryContent}>
@@ -81,7 +81,7 @@ export default function Home() {
 
         <section >
           <div className={styles.cta}>
-            <Image className={styles.ctaImg} src={ctaImg}  alt=''/>
+            <Image className={styles.ctaImg} src={ctaImg}  alt=""/>
             <div className={styles.ctaContent}>
               <h3>Pronto para triplicar sua</h3>
               <h3><strong>Geração de Leads?</strong></h3>
@@ -89,12 +89,12 @@ export default function Home() {
               <div className={styles.boxTop}>
                 <div className={styles.button}>
                   <button><strong>VER DEMOSTRAÇÃO</strong></button>
-                  <Image src={selo}  alt=''/>
+                  <Image src={selo}  alt=""/>
                 </div>
                 <div>
-                  <Image src={noCard}  alt=''/>
+                  <Image src={noCard}  alt=""/>
                   <span> Não é necessário Cartão de Crédito  | </span>
-                  <Image src={rating}  alt=''/>
+                  <Image src={rating}  alt=""/>
                   <span><strong> 4.9</strong>/5 média de satisfação</span>
                 </div>
               </div>
