@@ -39,7 +39,7 @@ export default function Footer() {
                     <span><strong>Siga a Leadster</strong></span>
                     <div className="footer-social-links">
                         <div className="footer-social">
-                            <Image className="footer-social-img" src={linkedin} alt="Logomarca da empresa" />
+                            <Image className="footer-social-img" src={linkedin} alt="Logomarca da empresa" href='#'/>
                         </div>
                         <div className="footer-social">
                             <Image className="footer-social-img" src={facebook} alt="Logomarca da empresa" />

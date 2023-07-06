@@ -1,0 +1,151 @@
+.modal {
+    background-color: rgba(61, 61, 61, 0.48);
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 36px;
+    height: 100%;
+    width: 100%;
+
+    overflow-y: scroll;
+    z-index: 3;
+}
+
+.modal_video {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 611px;
+    border-radius: 20px;
+    border-top: 6px solid #1b86fc;
+    color: #2f3c46;
+}
+    
+.close {
+    align-self: flex-end;
+    margin: 8px 12px 8px 0px;
+    cursor: pointer;
+}
+
+.title {
+    font-size: x-large;
+    width: 60%;
+    align-self: center;
+}
+
+.blue{
+    color: #1b86fc;
+}
+
+.video {
+    margin-top: 32px;
+    width: 100%;
+    
+}
+
+.description {
+    padding: 20px 20px 0 20px;
+    width: 100%;
+}
+
+.download {
+    padding: 20px 20px 20px 20px;
+    width: 100%;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+hr{
+    border-top: none;
+    border-color: rgba(0, 0, 0, 0.55);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.buttons-modal {
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.xls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #c2f4ea;
+    color: #00c2a0;
+    border-radius: 7px;
+}
+
+.xls-img{
+    background-color: #9fefdf;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 8px;
+}
+
+.xls-txt {
+    padding: 8px;
+    height: 100%;
+    width: 100%;
+}
+
+.doc {
+    display: flex;
+    align-items: center;
+    background-color: #c2e6ff;
+    color: #008ef0;
+    border-radius: 7px;
+}
+
+.doc-img {
+    background-color: #a1d9ff;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 8px;
+}
+
+.doc-txt {
+    padding: 8px;
+    height: 100%;
+    width: 100%;
+}
+
+.ppt {
+    display: flex;
+    align-items: center;
+    background-color: #fff8d0;
+    color: #b09c53;
+    border-radius: 7px;
+}
+
+.ppt-img {
+    background-color: #fff1a0;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 8px;
+}
+
+.ppt-txt {
+    padding: 8px;
+    height: 100%;
+    width: 100%;
+}

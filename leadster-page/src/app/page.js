@@ -13,6 +13,7 @@ import Footer from '@/components/Footer';
 import Button from '@/components/Button';
 import { useState } from 'react';
 import Card from '@/components/Card';
+import ModalLibrary from '@/components/ModalLibrary';
 
 export default function Home() {
   const [agencias, setAgencias] = useState(false);
@@ -20,6 +21,8 @@ export default function Home() {
   const [md, setMd] = useState(false);
   const [gl, setGl] = useState(false);
   const [mp, setMp] = useState(false);
+  const [show, setShow] = useState(false);
+
 
   return (
     <div>
@@ -57,15 +60,16 @@ export default function Home() {
             </div>
           </div>
           <div  className={styles.libraryContent}>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            <Card show={show} setShow={setShow} />
+            <Card show={show} setShow={setShow} />
+            <Card show={show} setShow={setShow} />
+            <Card show={show} setShow={setShow} />
+            <Card show={show} setShow={setShow} />
+            <Card show={show} setShow={setShow} />
+            <Card show={show} setShow={setShow} />
+            <Card show={show} setShow={setShow} />
+            <Card show={show} setShow={setShow} />
+            {show && <ModalLibrary show={show} setShow={setShow} />}
           </div>
           <div className={styles.libraryPages}>
             <span><strong>Página</strong></span>
